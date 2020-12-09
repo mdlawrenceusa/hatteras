@@ -1,0 +1,15 @@
+<h1>in the orbit</h1>
+<div class="grid-x grid-margin-x">
+  <div class="medium-9 large-8 cell">
+    <carousel [showIndicators]="true">
+      <slide *ngFor="let slide of slides" let index="index">
+        <figure class="orbit-figure"> 
+          <img class="orbit-image" [src]="slide.src" [alt]="slide.alt">
+          <figcaption class="orbit-caption">
+            <span [innerHtml]="slide.caption"></span>
+          </figcaption>
+        </figure>
+      </slide>
+    </carousel>
+  </div><!-- /cell -->
+</div><!-- /grid -->
